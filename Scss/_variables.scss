@@ -1,0 +1,28 @@
+// Variables
+
+$primaryColor: #040114;
+$textColor: #bbfff2;
+$MaxWidth: 1280px;
+
+// css
+@mixin FlexItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin btn {
+  padding: 5px 10px;
+  background: $textColor;
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+@mixin afterBefore {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 1px solid $primaryColor;  
+}
